@@ -34,7 +34,8 @@ jobs:
         run: mvn clean verify
 
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/spring-app:latest .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/spring-jwt-auth-api:latest .
+
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
@@ -43,4 +44,4 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Push image to Docker Hub
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/spring-app:latest
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/spring-jwt-auth-api:latest
