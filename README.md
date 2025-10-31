@@ -41,12 +41,19 @@ Este projeto demonstra a implementação completa de **login, registro, autentic
 ## 🧱 Estrutura do Projeto
 
 src/main/java/com/martins
+
 ├── security/ # Configurações de segurança e JWT
+
 ├── controller/ # Endpoints REST
+
 ├── model/ # Data Transfer Objects
+
 ├── entity/ # Entidades JPA
+
 ├── repository/ # Interfaces do JPA
+
 ├── service/ # Regras de negócio
+
 └── filter/ # Filtros e providers JWT
 
 ## 🧩 Endpoints Principais
@@ -73,22 +80,30 @@ cd spring-jwt-auth-api
 # Rodar aplicação
 ./mvnw spring-boot:run
 
+````
 A API será iniciada em http://localhost:8080.
 
-🧠 Aprendizados
+## 🧠 Aprendizados
 
 Este projeto demonstra:
-Configuração do Spring Security sem WebSecurityConfigurerAdapter
-Uso de filtros personalizados (AuthenticationFilter, AuthorizationFilter)
-Persistência de usuários com JPA
-Geração e validação de tokens JWT
+-Configuração do Spring Security sem WebSecurityConfigurerAdapter
 
-📚 Próximos Passos
+-Uso de filtros personalizados (AuthenticationFilter, AuthorizationFilter)
 
-Adicionar refresh token
-Implementar logout e blacklist de tokens
-Substituir H2 por PostgreSQL ou AWS
+-Persistência de usuários com JPA
+
+-Geração e validação de tokens JWT
+
+## 📚 Próximos Passos
+
+-Adicionar refresh token
+
+-Implementar logout e blacklist de tokens
+
+-Substituir H2 por PostgreSQL ou AWS
+
 
 👨‍💻 Autor
-Raimundo Martins
+
+Raimundo Martins | 
 Desenvolvedor Full Stack
